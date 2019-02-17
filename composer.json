@@ -1,0 +1,15 @@
+{
+  "name": "codexten/yii-metronic4",
+  "type": "library",
+  "description": "Yii Metronic theme integration",
+  "autoload": {
+    "psr-4": {
+      "codexten\\yii\\metronic4\\": "src"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "2.0.x-dev"
+    }
+  }
+}
