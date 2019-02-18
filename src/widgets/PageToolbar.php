@@ -52,40 +52,40 @@ class PageToolbar extends \entero\web\widgets\ButtonGroup
     {
         return [
             'save' => [
-                'label' => Yii::t('entero:metronic', 'Save'),
+                'label' => Yii::t('codexten:metronic4', 'Save'),
                 'icon' => '<i class="fa fa-save"></i>',
                 'class' => 'btn btn-xs green',
             ],
             'clone' => [
-                'label' => Yii::t('entero:metronic', 'Clone'),
+                'label' => Yii::t('codexten:metronic4', 'Clone'),
                 'icon' => '<i class="fa fa-copy"></i>',
                 'class' => 'btn btn-xs purple',
             ],
             'create' => [
-                'label' => Yii::t('entero:metronic', 'Create'),
+                'label' => Yii::t('codexten:metronic4', 'Create'),
                 'icon' => '<i class="fa fa-plus"></i>',
                 'url' => 'create',
                 'class' => 'btn btn-xs blue',
             ],
             'reset' => [
-                'label' => Yii::t('entero:metronic', 'Reset'),
+                'label' => Yii::t('codexten:metronic4', 'Reset'),
                 'icon' => '<i class="fa fa-refresh"></i>',
                 'class' => 'btn btn-xs default',
             ],
             'cancel' => [
-                'label' => Yii::t('entero:metronic', 'Back'),
+                'label' => Yii::t('codexten:metronic4', 'Back'),
                 'icon' => '<i class="fa fa-reply"></i>',
                 'url' => 'cancel',
                 'class' => 'btn btn-xs dark',
             ],
             'delete' => [
-                'label' => Yii::t('entero:metronic', 'Delete'),
-                'title' => Yii::t('entero:metronic', 'Delete'),
+                'label' => Yii::t('codexten:metronic4', 'Delete'),
+                'title' => Yii::t('codexten:metronic4', 'Delete'),
                 'icon' => '<i class="fa fa-trash"></i>',
                 'url' => 'delete',
                 'class' => 'btn btn-xs red',
                 'method' => 'post',
-                'confirm' => Yii::t('entero:metronic', 'Are you sure you want to delete this item?'),
+                'confirm' => Yii::t('codexten:metronic4', 'Are you sure you want to delete this item?'),
             ],
         ];
     }

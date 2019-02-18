@@ -94,7 +94,7 @@ class TreeBuilder {
         {
             if (!property_exists($this, $param))
             {
-                throw new Exception(Yii::t('entero:metronic', 'Class {class} has no param called "{param}."', array(
+                throw new Exception(Yii::t('codexten:metronic4', 'Class {class} has no param called "{param}."', array(
                     '{class}' => get_class($this),
                     '{param}' => $param
                 )));

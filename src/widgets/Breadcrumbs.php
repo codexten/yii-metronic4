@@ -83,7 +83,7 @@ class Breadcrumbs extends \yii\widgets\Breadcrumbs
 
         if ($this->homeLink === null) {
             $links[] = $this->renderItem([
-                'label' => Yii::t('entero:metronic', 'Home'),
+                'label' => Yii::t('codexten:metronic4', 'Home'),
                 'url' => Yii::$app->homeUrl,
             ], $this->itemTemplate);
         } else if ($this->homeLink !== false) {

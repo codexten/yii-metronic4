@@ -80,7 +80,7 @@ class ActionColumn extends \yii\grid\ActionColumn {
         {
             $this->buttons['view'] = function ($url, $model, $key) {
                 return Html::a('<span class="'.$this->viewButtonIcon.'"></span>', $url, [
-                        'title' => \Yii::t('entero:metronic', 'View'),
+                        'title' => \Yii::t('codexten:metronic4', 'View'),
                         'data-pjax' => '0',
                         'class' => $this->btnViewClass,
                 ]);
@@ -90,7 +90,7 @@ class ActionColumn extends \yii\grid\ActionColumn {
         {
             $this->buttons['update'] = function ($url, $model, $key) {
                 return Html::a('<span class="'.$this->updateButtonIcon.'"></span>', $url, [
-                        'title' => \Yii::t('entero:metronic', 'Update'),
+                        'title' => \Yii::t('codexten:metronic4', 'Update'),
                         'data-pjax' => '0',
                         'class' => $this->btnUpdateClass,
                 ]);
@@ -100,8 +100,8 @@ class ActionColumn extends \yii\grid\ActionColumn {
         {
             $this->buttons['delete'] = function ($url, $model, $key) {
                 return Html::a('<span class="'.$this->deleteButtonIcon.'"></span>', $url, [
-                        'title' => \Yii::t('entero:metronic', 'Delete'),
-                        'data-confirm' => \Yii::t('entero:metronic', 'Are you sure you want to delete this item?'),
+                        'title' => \Yii::t('codexten:metronic4', 'Delete'),
+                        'data-confirm' => \Yii::t('codexten:metronic4', 'Are you sure you want to delete this item?'),
                         'data-method' => 'post',
                         'data-pjax' => '0',
                         'class' => $this->btnDeleteClass,
@@ -128,7 +128,7 @@ class ActionColumn extends \yii\grid\ActionColumn {
         }
 
         return Html::a('<span class="'.$this->resetButtonIcon.'"></span>', $this->routeFilterReset, [
-                'title' => \Yii::t('entero:metronic', 'Reset filter'),
+                'title' => \Yii::t('codexten:metronic4', 'Reset filter'),
                 'data-pjax' => '0',
         ]);
     }

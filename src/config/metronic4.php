@@ -10,13 +10,10 @@ use codexten\yii\metronic4\bundles\ThemeAsset;
 use codexten\yii\metronic4\Theme;
 
 return [
-    'aliases' => [
-        '@ui/admin/theme/metronic/asset' => '@vendor/entero/entero-metronic4-asset/src',
-    ],
     'components' => [
         'i18n' => [
             'translations' => [
-                'entero:metronic' => [
+                'codexten:metronic4' => [
                     'class' => \yii\i18n\PhpMessageSource::class,
                     'basePath' => '@codexten/yii/metronic4/messages',
                 ],

@@ -307,22 +307,22 @@ class Theme extends \entero\web\Theme
         if (!$this->resources) {
             throw new InvalidConfigException('You have to specify resources locations to be able to create symbolic links. Specify "admin" and "global" theme folder locations.');
         }
-        $this->resources = getAlias($this->resources);
+        $this->resources = Yii::$app->params['metronic4.asset.path'];
 
         if ($this->topBar['userDropdown']['visible'] && empty(ArrayHelper::getValue($this->topBar['userDropdown'],
                 'items', []))) {
             $this->topBar['userDropdown']['items'] = [
                 [
-                    'label' => Yii::t('entero:metronic', '{icon} My Profile', ['icon' => '<i class="icon-user"></i>']),
+                    'label' => Yii::t('codexten:metronic4', '{icon} My Profile', ['icon' => '<i class="icon-user"></i>']),
                     'url' => '#',
                 ],
                 [
-                    'label' => Yii::t('entero:metronic', '{icon} My Calendar',
+                    'label' => Yii::t('codexten:metronic4', '{icon} My Calendar',
                         ['icon' => '<i class="icon-calendar"></i>']),
                     'url' => '#',
                 ],
                 [
-                    'label' => Yii::t('entero:metronic', '{icon} My Inbox {badge}',
+                    'label' => Yii::t('codexten:metronic4', '{icon} My Inbox {badge}',
                         [
                             'icon' => '<i class="icon-envelope-open"></i>',
                             'badge' => '<span class="badge badge-danger"> 3 </span>',
@@ -330,7 +330,7 @@ class Theme extends \entero\web\Theme
                     'url' => '#',
                 ],
                 [
-                    'label' => Yii::t('entero:metronic', '{icon} My Tasks {badge}',
+                    'label' => Yii::t('codexten:metronic4', '{icon} My Tasks {badge}',
                         [
                             'icon' => '<i class="icon-rocket"></i>',
                             'badge' => '<span class="badge badge-success"> 7 </span>',
@@ -338,11 +338,11 @@ class Theme extends \entero\web\Theme
                     'url' => '#',
                 ],
                 [
-                    'label' => Yii::t('entero:metronic', '{icon} Lock Screen', ['icon' => '<i class="icon-lock"></i>']),
+                    'label' => Yii::t('codexten:metronic4', '{icon} Lock Screen', ['icon' => '<i class="icon-lock"></i>']),
                     'url' => '#',
                 ],
                 [
-                    'label' => Yii::t('entero:metronic', '{icon} Log Out', ['icon' => '<i class="icon-key"></i>']),
+                    'label' => Yii::t('codexten:metronic4', '{icon} Log Out', ['icon' => '<i class="icon-key"></i>']),
                     'url' => ['/sign-in/logout'],
                     'linkOptions' => [
                         'data-method' => 'post',

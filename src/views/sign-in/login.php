@@ -8,7 +8,7 @@ use yii\widgets\ActiveForm;
 /* @var $form yii\bootstrap\ActiveForm */
 /* @var $model \entero\web\admin\models\LoginForm */
 
-$this->title = Yii::t('entero:metronic', 'Sign In');
+$this->title = Yii::t('codexten:metronic4', 'Sign In');
 app()->view->theme->bodyOptions['class'] = 'login';
 
 ?>
@@ -28,7 +28,7 @@ app()->view->theme->bodyOptions['class'] = 'login';
 
     <h3 class="form-title font-green">
 
-        <?= Yii::t('entero:metronic', 'Sign In') ?>
+        <?= Yii::t('codexten:metronic4', 'Sign In') ?>
 
     </h3>
 
@@ -40,7 +40,7 @@ app()->view->theme->bodyOptions['class'] = 'login';
 
     <div class="form-actions">
 
-        <?= Html::submitButton(Yii::t('entero:metronic', 'Login'), ['class' => 'btn green uppercase']) ?>
+        <?= Html::submitButton(Yii::t('codexten:metronic4', 'Login'), ['class' => 'btn green uppercase']) ?>
 
         <label class="rememberme check mt-checkbox mt-checkbox-outline">
 

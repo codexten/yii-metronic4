@@ -26,7 +26,7 @@ use codexten\yii\metronic4\Theme;
 
     <?= Breadcrumbs::widget([
         'homeLink' => [
-            'label' => Yii::t('entero:metronic', 'Home'),
+            'label' => Yii::t('codexten:metronic4', 'Home'),
             'url' => Yii::$app->homeUrl,
         ],
         'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
