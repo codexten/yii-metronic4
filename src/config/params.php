@@ -6,4 +6,6 @@
  * Time: 8:52 PM
  */
 
-return [];
+return [
+    'metronic4.asset.path' => '',
+];

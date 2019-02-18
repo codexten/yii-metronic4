@@ -11,21 +11,19 @@ use yii\web\AssetBundle;
 
 /**
  * Class BaseAssetBundle
+ *
  * @package codexten\yii\metronic4\bundles
  * @author Jomon Johnson <jomon@entero.in>
  */
 class BaseAssetBundle extends AssetBundle
 {
     /**
-     * @var string source assets path
-     */
-    public $sourcePath = '@vendor/entero/entero-metronic4-asset/src';
-
-    /**
      * @inheritdoc
      */
     public function init()
     {
+        $this->sourcePath = \Yii::$app->params['metronic4.asset.path'];
+
         foreach ($this->css as $k => $v) {
             if (strpos($v, '.min.css') === false) {
                 $fileName = str_replace('.css', '.min.css', $v);
