@@ -4,7 +4,8 @@
   "description": "Yii Metronic theme integration",
   "require": {
     "yii2mod/yii2-sweet-alert": "1.3",
-    "yiisoft/yii2-bootstrap": "~2.0.8"
+    "yiisoft/yii2-bootstrap": "~2.0.8",
+    "codexten/yii-settings": "~2.0"
   },
   "autoload": {
     "psr-4": {
