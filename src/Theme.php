@@ -16,7 +16,7 @@ use yii\base\InvalidConfigException;
 use yii\helpers\ArrayHelper;
 use yii\web\AssetBundle;
 
-class Theme extends \entero\web\Theme
+class Theme extends \codexten\yii\web\Theme
 {
     /**
      * @var AssetBundle

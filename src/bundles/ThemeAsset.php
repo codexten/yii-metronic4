@@ -19,7 +19,7 @@ class ThemeAsset extends BaseAssetBundle
     public $depends = [
         'codexten\yii\metronic4\bundles\CoreAsset',
         'codexten\yii\metronic4\bundles\StyleBasedAsset',
-        'entero\web\AssetBundle',
+        'codexten\yii\web\AssetBundle',
     ];
 
     /**

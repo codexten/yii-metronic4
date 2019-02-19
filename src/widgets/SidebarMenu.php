@@ -7,7 +7,7 @@
 namespace codexten\yii\metronic4\widgets;
 
 use codexten\yii\metronic4\Theme;
-use entero\web\widgets\Menu;
+use codexten\yii\web\widgets\Menu;
 use yii\base\InvalidConfigException;
 use yii\helpers\Html;
 use yii\helpers\ArrayHelper;

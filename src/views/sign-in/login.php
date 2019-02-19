@@ -6,7 +6,7 @@ use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap\ActiveForm */
-/* @var $model \entero\web\admin\models\LoginForm */
+/* @var $model \codexten\yii\web\admin\models\LoginForm */
 
 $this->title = Yii::t('codexten:metronic4', 'Sign In');
 app()->view->theme->bodyOptions['class'] = 'login';

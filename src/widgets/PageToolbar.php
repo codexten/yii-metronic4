@@ -18,7 +18,7 @@ use Yii;
  * @author Ashlin A <ashlin@entero.in>
  * @author Jomon Johnson <jomon@entero.in>
  */
-class PageToolbar extends \entero\web\widgets\ButtonGroup
+class PageToolbar extends \codexten\yii\web\widgets\ButtonGroup
 {
     /**
      * @var string

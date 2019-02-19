@@ -9,7 +9,7 @@
 namespace codexten\yii\metronic4\menus;
 
 
-use entero\web\components\Menu;
+use codexten\yii\web\components\Menu;
 
 class SidebarMenu extends Menu
 {
