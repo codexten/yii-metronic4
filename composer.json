@@ -3,9 +3,10 @@
   "type": "library",
   "description": "Yii Metronic theme integration",
   "require": {
+    "codexten/yii-web": "~2.0",
+    "codexten/yii-settings": "~2.0",
     "yii2mod/yii2-sweet-alert": "1.3",
-    "yiisoft/yii2-bootstrap": "~2.0.8",
-    "codexten/yii-settings": "~2.0"
+    "yiisoft/yii2-bootstrap": "~2.0.8"
   },
   "autoload": {
     "psr-4": {

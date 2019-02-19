@@ -313,7 +313,8 @@ class Theme extends \entero\web\Theme
                 'items', []))) {
             $this->topBar['userDropdown']['items'] = [
                 [
-                    'label' => Yii::t('codexten:metronic4', '{icon} My Profile', ['icon' => '<i class="icon-user"></i>']),
+                    'label' => Yii::t('codexten:metronic4', '{icon} My Profile',
+                        ['icon' => '<i class="icon-user"></i>']),
                     'url' => '#',
                 ],
                 [
@@ -338,7 +339,8 @@ class Theme extends \entero\web\Theme
                     'url' => '#',
                 ],
                 [
-                    'label' => Yii::t('codexten:metronic4', '{icon} Lock Screen', ['icon' => '<i class="icon-lock"></i>']),
+                    'label' => Yii::t('codexten:metronic4', '{icon} Lock Screen',
+                        ['icon' => '<i class="icon-lock"></i>']),
                     'url' => '#',
                 ],
                 [
