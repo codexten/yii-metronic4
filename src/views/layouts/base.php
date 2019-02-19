@@ -12,7 +12,7 @@
 
 ?>
 
-<?php $this->beginContent('@entero/web/views/layouts/base.php'); ?>
+<?php $this->beginContent('@codexten/yii/web/views/layouts/base.php'); ?>
 
 <?= yii2mod\alert\Alert::widget(['useSessionFlash' => true]); ?>
 
