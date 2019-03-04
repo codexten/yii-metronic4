@@ -1,8 +1,4 @@
 <?php
-/**
- * @copyright Copyright (c) 2014 icron.org
- * @license http://yii2metronic.icron.org/license.html
- */
 
 namespace codexten\yii\metronic4\widgets;
 
@@ -63,7 +59,7 @@ use yii\widgets\ActiveForm as CoreActiveForm;
  * ]);
  * ```
  *
- * @author Jomon Johnson <jomon@entero.in>
+ * @author Jomon Johnson <jomonjohnson.dev@gmail.com>
  */
 class SidebarMenu extends Menu
 {

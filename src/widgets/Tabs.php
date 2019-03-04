@@ -47,7 +47,7 @@ use yii\helpers\Html;
  * ]);
  * ```
  *
- * @author Jomon Johnson <jomon@entero.in>
+ * @author Jomon Johnson <jomonjohnson.dev@gmail.com>
  */
 class Tabs extends \yii\bootstrap\Tabs
 {

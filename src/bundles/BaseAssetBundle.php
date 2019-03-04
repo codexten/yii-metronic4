@@ -1,9 +1,4 @@
 <?php
-/**
- * @link https://entero.co.in/
- * @copyright Copyright (c) 2012 Entero Software Solutions Pvt.Ltd
- * @license https://entero.co.in/license/
- */
 
 namespace codexten\yii\metronic4\bundles;
 
@@ -13,7 +8,6 @@ use yii\web\AssetBundle;
  * Class BaseAssetBundle
  *
  * @package codexten\yii\metronic4\bundles
- * @author Jomon Johnson <jomon@entero.in>
  */
 class BaseAssetBundle extends AssetBundle
 {

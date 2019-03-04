@@ -46,6 +46,9 @@ return [
 //                        //To fix layout issue of user module, while accessing `/account/login`
 //                        '@codexten/yii/metronic4/views',
 //                    ],
+                    '@codexten/yii/modules/auth/' => [
+                        '@codexten/yii/metronic4/modules/auth/',
+                    ],
                 ],
             ],
         ],

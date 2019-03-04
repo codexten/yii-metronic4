@@ -1,9 +1,4 @@
 <?php
-/**
- * @link https://entero.co.in/
- * @copyright Copyright (c) 2012 Entero Software Solutions Pvt.Ltd
- * @license https://entero.co.in/license/
- */
 
 namespace codexten\yii\metronic4\widgets;
 
@@ -24,7 +19,7 @@ use yii\helpers\Html;
  * echo 'Body portlet';
  * Panel::end();
  *
- * @author Jomon Johnson <jomon@entero.in>
+ * @author Jomon Johnson <jomonjohnson.dev@gmail.com>
  */
 class Panel extends Widget
 {

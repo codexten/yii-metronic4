@@ -4,7 +4,7 @@
  * @copyright Copyright (c) 2012 Entero Software Solutions Pvt.Ltd
  * @license https://entero.co.in/license/
  * @author Ashlin A <ashlin@entero.in>
- * @author Jomon Johnson <jomon@entero.in>
+ * @author Jomon Johnson <jomonjohnson.dev@gmail.com>
  */
 
 use yii\web\View;

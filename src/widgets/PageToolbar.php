@@ -1,22 +1,16 @@
 <?php
-/**
- * @link https://entero.co.in/
- * @copyright Copyright (c) 2012 Entero Software Solutions Pvt.Ltd
- * @license https://entero.co.in/license/
- */
 
 namespace codexten\yii\metronic4\widgets;
 
-use entero\helpers\ArrayHelper;
-use entero\helpers\Html;
+use codexten\yii\helpers\ArrayHelper;
+use codexten\yii\helpers\Html;
 use Yii;
 
 /**
  * Class PageToolBar
  *
  * @package codexten\yii\metronic4\widgets
- * @author Ashlin A <ashlin@entero.in>
- * @author Jomon Johnson <jomon@entero.in>
+ * @author Jomon Johnson <jomonjohnson.dev@gmail.com>
  */
 class PageToolbar extends \codexten\yii\web\widgets\ButtonGroup
 {
