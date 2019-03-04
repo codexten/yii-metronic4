@@ -26,22 +26,26 @@ return [
                     'class' => Theme::class,
                     'theme' => 'darkblue',
                     'style' => Theme::STYLE_SQUARE,
-                    'pathMap' => [
-                        '@app/views' => [
-                            '@codexten/yii/metronic4/views',
-                        ],
-                        '@app/views/layouts' => [
-                            '@codexten/yii/metronic4/views/layouts',
-                        ],
-                        '@entero/module/user/views' => [
-                            '@codexten/yii/metronic4/views/_modules/user',
-                            //To fix layout issue of user module, while accessing `/account/login`
-                            '@codexten/yii/metronic4/views',
-                        ],
-                    ],
                     'assets' => [
                         ThemeAsset::class,
                     ],
+                ],
+            ],
+        ],
+        'view' => [
+            'theme' => [
+                'pathMap' => [
+                    '@app/views' => [
+                        '@codexten/yii/metronic4/views',
+                    ],
+                    '@app/views/layouts' => [
+                        '@codexten/yii/metronic4/views/layouts',
+                    ],
+//                    '@entero/module/user/views' => [
+//                        '@codexten/yii/metronic4/views/_modules/user',
+//                        //To fix layout issue of user module, while accessing `/account/login`
+//                        '@codexten/yii/metronic4/views',
+//                    ],
                 ],
             ],
         ],
