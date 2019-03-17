@@ -6,7 +6,8 @@
     "codexten/yii-web": "~2.0",
     "codexten/yii-settings": "~2.0",
     "yii2mod/yii2-sweet-alert": "1.3",
-    "codexten/yii-bootstrap3": "~2.0"
+    "codexten/yii-bootstrap3": "~2.0",
+    "bower-asset/jquery": "~2.0"
   },
   "autoload": {
     "psr-4": {
