@@ -33,8 +33,17 @@ class PageToolbar extends \codexten\yii\web\widgets\ButtonGroup
         if (isset($this->params['template'])) {
             $this->template = $this->params['template'];
             unset($this->params['template']);
-        }
+        } else {
+            $template = $this->template;
+            foreach ($this->defaultItems() as $key => $value) {
+                if (!isset($this->params[$key])) {
+                    $template = str_replace($key, '', $template);
+                }
+                $template = str_replace('{}', '', $template);
 
+                $this->template = $template;
+            }
+        }
         $this->items = $this->params ? ArrayHelper::merge($this->defaultItems(), $this->params) : [];
         $this->normalize();
     }
@@ -42,7 +51,8 @@ class PageToolbar extends \codexten\yii\web\widgets\ButtonGroup
     /**
      * @return array
      */
-    protected function defaultItems()
+    protected
+    function defaultItems()
     {
         return [
             'save' => [
@@ -88,7 +98,8 @@ class PageToolbar extends \codexten\yii\web\widgets\ButtonGroup
     /**
      * @inheritdoc
      */
-    protected function normalize()
+    protected
+    function normalize()
     {
         $items = [];
         preg_match_all("/\{([a-zA-Z0-9]+)\}/", $this->template, $templates);
