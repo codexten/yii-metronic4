@@ -51,8 +51,7 @@ class PageToolbar extends \codexten\yii\web\widgets\ButtonGroup
     /**
      * @return array
      */
-    protected
-    function defaultItems()
+    protected function defaultItems()
     {
         return [
             'save' => [
@@ -98,8 +97,7 @@ class PageToolbar extends \codexten\yii\web\widgets\ButtonGroup
     /**
      * @inheritdoc
      */
-    protected
-    function normalize()
+    protected function normalize()
     {
         $items = [];
         preg_match_all("/\{([a-zA-Z0-9]+)\}/", $this->template, $templates);
