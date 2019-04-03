@@ -11,12 +11,19 @@ $this->params['breadcrumbs'][] = $this->title;
 $this->params['body']['options'] = ['class' => 'login'];
 
 \codexten\yii\metronic4\bundles\LoginAssetBundle::register($this);
+
+use yii\helpers\Html;
+use yii\helpers\Url;
 ?>
 
 <div class="logo">
-    <a href="index.html">
-        <?= Yii::$app->name ?>
+
+    <a href="<?= Url::to(['/']) ?>">
+
+        <?= Html::img('/img/logo.png', ['alt' => Yii::$app->name, 'class' => 'logo-default',]) ?>
+
     </a>
+
 </div>
 <div class="content">
 
@@ -24,5 +31,5 @@ $this->params['body']['options'] = ['class' => 'login'];
         'model' => $model,
         'module' => $module,
     ]) ?>
-    
+
 </div>
