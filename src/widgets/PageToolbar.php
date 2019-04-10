@@ -17,7 +17,7 @@ class PageToolbar extends \codexten\yii\web\widgets\ButtonGroup
     /**
      * @var string
      */
-    public $template = '{save}{clone}{create}{reset}{cancel}{delete}';
+    public $template = '{save}{reset}{clone}{create}{delete}{cancel}';
     /**
      * @var array
      */
@@ -59,6 +59,11 @@ class PageToolbar extends \codexten\yii\web\widgets\ButtonGroup
                 'icon' => '<i class="fa fa-save"></i>',
                 'class' => 'btn btn-xs green',
             ],
+            'reset' => [
+                'label' => Yii::t('codexten:metronic4', 'Reset'),
+                'icon' => '<i class="fa fa-refresh"></i>',
+                'class' => 'btn btn-xs default',
+            ],
             'clone' => [
                 'label' => Yii::t('codexten:metronic4', 'Clone'),
                 'icon' => '<i class="fa fa-copy"></i>',
@@ -70,17 +75,6 @@ class PageToolbar extends \codexten\yii\web\widgets\ButtonGroup
                 'url' => 'create',
                 'class' => 'btn btn-xs blue',
             ],
-            'reset' => [
-                'label' => Yii::t('codexten:metronic4', 'Reset'),
-                'icon' => '<i class="fa fa-refresh"></i>',
-                'class' => 'btn btn-xs default',
-            ],
-            'cancel' => [
-                'label' => Yii::t('codexten:metronic4', 'Back'),
-                'icon' => '<i class="fa fa-reply"></i>',
-                'url' => 'cancel',
-                'class' => 'btn btn-xs dark',
-            ],
             'delete' => [
                 'label' => Yii::t('codexten:metronic4', 'Delete'),
                 'title' => Yii::t('codexten:metronic4', 'Delete'),
@@ -89,6 +83,12 @@ class PageToolbar extends \codexten\yii\web\widgets\ButtonGroup
                 'class' => 'btn btn-xs red',
                 'method' => 'post',
                 'confirm' => Yii::t('codexten:metronic4', 'Are you sure you want to delete this item?'),
+            ],
+            'cancel' => [
+                'label' => Yii::t('codexten:metronic4', 'Back'),
+                'icon' => '<i class="fa fa-reply"></i>',
+                'url' => 'cancel',
+                'class' => 'btn btn-xs dark',
             ],
         ];
     }
